@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import { Home, Movie, Search } from "./pages/index.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<App />}>
           <Route path="/busca-filmes" element={<Home />} />
@@ -15,6 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/busca-filmes/search" element={<Search />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
