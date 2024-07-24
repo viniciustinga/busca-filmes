@@ -10,9 +10,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <HashRouter>
       <Routes>
         <Route element={<App />}>
-          <Route path="/" element={<Home />} />
-          <Route path="movie/:id" element={<Movie />} />
-          <Route path="search" element={<Search />} />
+          <Route path="/busca-filmes" element={<Home />} />
+          <Route path="/busca-filmes/movie/:id" element={<Movie />} />
+          <Route path="/busca-filmes/search" element={<Search />} />
         </Route>
       </Routes>
     </HashRouter>
